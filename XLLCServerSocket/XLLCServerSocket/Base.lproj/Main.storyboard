@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IX9-AU-Mfx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MjP-Fo-20f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户端IP：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xij-5j-mdM">
+                                <rect key="frame" x="25" y="155.5" width="110" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="jcJ-Kh-7W6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客户端端口号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5x-1F-B2v">
+                                <rect key="frame" x="25" y="183.5" width="110" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="fm5-ri-BS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未获取" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-9s-2nb">
+                                <rect key="frame" x="145" y="155.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未获取" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfA-Kg-Ntf">
+                                <rect key="frame" x="145" y="183.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOS-he-8ur">
+                                <rect key="frame" x="270" y="165.5" width="90" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="09Q-gA-5AT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="th1-ky-ak5">
+                                <rect key="frame" x="25" y="236.5" width="255" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWA-oY-dpN">
+                                <rect key="frame" x="295" y="236.5" width="65" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.73725490199999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Ozd-M3-DX3"/>
+                                </constraints>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abn-JK-NRS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收到的消息：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dah-9T-CFG">
+                                <rect key="frame" x="25" y="301.5" width="114.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未收到" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-Yp-jSN">
+                                <rect key="frame" x="149.5" y="302.5" width="61.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ServerSocket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-rO-scK">
+                                <rect key="frame" x="136.5" y="70" width="102.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu6-Qk-WaB">
+                                <rect key="frame" x="156.5" y="105.5" width="62" height="30"/>
+                                <state key="normal" title="建立监听"/>
+                                <state key="selected" title="断开监听"/>
+                                <connections>
+                                    <action selector="listenBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5e-AZ-ADr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xij-5j-mdM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="907-aC-kTB"/>
+                            <constraint firstItem="zOS-he-8ur" firstAttribute="top" secondItem="xij-5j-mdM" secondAttribute="bottom" constant="-8" id="Ajb-IR-bXC"/>
+                            <constraint firstItem="gZf-Yp-jSN" firstAttribute="leading" secondItem="dah-9T-CFG" secondAttribute="trailing" constant="10" id="Awh-Lv-zMe"/>
+                            <constraint firstItem="gZf-Yp-jSN" firstAttribute="centerY" secondItem="dah-9T-CFG" secondAttribute="centerY" id="Ckj-GD-4SD"/>
+                            <constraint firstItem="UMd-9s-2nb" firstAttribute="leading" secondItem="xij-5j-mdM" secondAttribute="trailing" constant="10" id="Eh7-qu-LbW"/>
+                            <constraint firstItem="dah-9T-CFG" firstAttribute="top" secondItem="th1-ky-ak5" secondAttribute="bottom" constant="35" id="GL8-ES-0Wm"/>
+                            <constraint firstItem="B5x-1F-B2v" firstAttribute="top" secondItem="xij-5j-mdM" secondAttribute="bottom" constant="10" id="HBr-9U-GOa"/>
+                            <constraint firstItem="UMd-9s-2nb" firstAttribute="centerY" secondItem="xij-5j-mdM" secondAttribute="centerY" id="ISw-aH-nQU"/>
+                            <constraint firstItem="dxi-rO-scK" firstAttribute="top" secondItem="IX9-AU-Mfx" secondAttribute="bottom" constant="50" id="JVH-8I-ZMg"/>
+                            <constraint firstItem="kWA-oY-dpN" firstAttribute="top" secondItem="B5x-1F-B2v" secondAttribute="bottom" constant="35" id="Ja6-Re-Dkr"/>
+                            <constraint firstItem="MfA-Kg-Ntf" firstAttribute="top" secondItem="UMd-9s-2nb" secondAttribute="bottom" constant="10" id="LFP-tb-w78"/>
+                            <constraint firstItem="th1-ky-ak5" firstAttribute="centerY" secondItem="kWA-oY-dpN" secondAttribute="centerY" id="ORs-0Z-QaB"/>
+                            <constraint firstItem="dah-9T-CFG" firstAttribute="leading" secondItem="th1-ky-ak5" secondAttribute="leading" id="Rej-qN-KC3"/>
+                            <constraint firstItem="th1-ky-ak5" firstAttribute="trailing" secondItem="kWA-oY-dpN" secondAttribute="leading" constant="-15" id="Rv3-Wr-E6N"/>
+                            <constraint firstItem="kWA-oY-dpN" firstAttribute="trailing" secondItem="zOS-he-8ur" secondAttribute="trailing" id="Tus-sb-qmd"/>
+                            <constraint firstItem="yu6-Qk-WaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gzH-St-Y86"/>
+                            <constraint firstAttribute="trailing" secondItem="zOS-he-8ur" secondAttribute="trailing" constant="15" id="heC-Ef-dwj"/>
+                            <constraint firstItem="xij-5j-mdM" firstAttribute="top" secondItem="yu6-Qk-WaB" secondAttribute="bottom" constant="20" id="rLw-1q-ikl"/>
+                            <constraint firstItem="th1-ky-ak5" firstAttribute="leading" secondItem="xij-5j-mdM" secondAttribute="leading" id="u99-hy-TVZ"/>
+                            <constraint firstItem="MfA-Kg-Ntf" firstAttribute="leading" secondItem="UMd-9s-2nb" secondAttribute="leading" id="uYn-8L-JR7"/>
+                            <constraint firstItem="yu6-Qk-WaB" firstAttribute="top" secondItem="dxi-rO-scK" secondAttribute="bottom" constant="15" id="wtD-ur-Plq"/>
+                            <constraint firstItem="dxi-rO-scK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xu9-hT-gY9"/>
+                            <constraint firstItem="B5x-1F-B2v" firstAttribute="leading" secondItem="xij-5j-mdM" secondAttribute="leading" id="yMm-zq-pIz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clientIPLabel" destination="UMd-9s-2nb" id="a4b-VD-Ekv"/>
+                        <outlet property="clientPortLabel" destination="MfA-Kg-Ntf" id="vMN-ig-aKa"/>
+                        <outlet property="listenBtn" destination="yu6-Qk-WaB" id="uF5-cj-EZK"/>
+                        <outlet property="msgField" destination="th1-ky-ak5" id="kqQ-JA-Jy3"/>
+                        <outlet property="receiveMsgLabel" destination="gZf-Yp-jSN" id="210-Z3-h07"/>
+                        <outlet property="statusLabel" destination="zOS-he-8ur" id="tFI-Rj-xt1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
